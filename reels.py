@@ -182,7 +182,7 @@ def scrape_reel_urls(channel, url):
     options.add_argument(f"--user-data-dir={profile_dir}")
 
     driver = webdriver.Chrome(options=options)
-    driver.maximize_window()
+    driver.set_window_size(1920, 1080)
     driver.get(url)
     sleep(3)
 
